@@ -1,3 +1,105 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.flats {
+  width: 100%;
+  margin: auto;
+}
+
+.banner {
+  background-image: url("https://source.unsplash.com/random?flats");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-tite{
+  position: relative;
+  top: -30px;
+  width: 50%;
+  margin: auto 30px;
+  background-color: rgb(248, 248, 248);
+  padding: 20px;
+  border-radius: 10px;
+}
+.book-now {
+  width: 30%;
+  margin: auto;
+  background-color: rgb(248, 248, 248);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.book-now > button {
+  width: 100%;
+}
+
+.details {
+  width: 30%;
+  margin: 20px auto;
+  background-color: rgb(248, 248, 248);
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.socials {
+  width: 30%;
+  margin: 10px auto;
+  background-color: rgb(248, 248, 248);
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.booking {
+  width: 100%;
+  position: absolute;
+  top: 240px;
+  right: -400px;
+}
+
+i {
+  padding: 4px;
+}
+
+.descrip {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  margin: auto 30px;
+  background-color: rgb(248, 248, 248);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.search {
+  position: relative;
+  left: 850px;
+}
+.search > span {
+  margin: 5px;
+}
+
+.card-body {
+  background: rgb(248, 248, 248);
+}
+
+.links {
+  padding: 20px;
+}
+.link_to {
+  margin: 4px;
+}
+
+.form2 {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  background: rgb(248, 248, 248);
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
