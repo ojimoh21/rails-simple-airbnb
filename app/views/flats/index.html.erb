@@ -1,22 +1,23 @@
-<h1>All our Flats (<%=@flats.count%>)</h1>
+<h1 class="text-center m-4">All our Flats (<%=@flats.count%>)</h1>
 
-
-<div class="d-flex flex-column">
-<% @flats.each do |flat| %>
-<div class=" flats card" style="width: 18rem;">
-  <img class="card-img-top" src="https://source.unsplash.com/random?flats" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><%=flat.name %></h5>
-    <p><%= flat.description %></p>
-    <span><i class="fas fa-user-friends"></i> <%= flat.number_of_guest %></span>
-    <span><i class="fas fa-pound-sign"></i><%= flat.price_per_night %></span>
-  </div>
-  <div class="card-text links">
-  <%= link_to "More Info", flat_path(flat), class: "text-primary link_to"%>
-  <%= link_to "edit", edit_flat_path(flat), class: "text-warning link_to"%>
-  <%= link_to "Remove", flat_path(flat), method: :delete, data: {confirm: "Are you sure you want to delete #{flat.name}?"}, class: "text-danger link_to"%>
+<div class="cards-container">
+  <div class="cards">
+    <% @flats.each do |flat| %>
+    <div class="flats card" style="width: 18rem;">
+      <img class="card-img-top" src="https://source.unsplash.com/random?flats" alt="Card image cap" sytle="height: 30%;">
+      <div class="card-body">
+        <h5 class="card-title"><%=flat.name %></h5>
+        <p><%= flat.description %></p>
+        <span><i class="fas fa-user-friends"></i> <%= flat.number_of_guest %></span>
+        <span><i class="fas fa-pound-sign"></i><%= flat.price_per_night %></span>
+      </div>
+      <div class="card-text links">
+      <%= link_to "More Info", flat_path(flat), class: "text-primary link_to"%>
+      <%= link_to "edit", edit_flat_path(flat), class: "text-warning link_to"%>
+      <%= link_to "Remove", flat_path(flat), method: :delete, data: {confirm: "Are you sure you want to delete #{flat.name}?"}, class: "text-danger link_to"%>
+      </div>
+    </div>
+    <%end%>
   </div>
 </div>
-<br>
-<%end%>
-</div>
+4
